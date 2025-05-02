@@ -1,0 +1,175 @@
+/* Main container for CTA section */
+.cta-section {
+    background: linear-gradient(135deg, #6ee7b7 0%, #3b82f6 100%);
+    padding: 80px 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    
+}
+
+/* CTA Container */
+.cta-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    
+}
+
+/* Hover effect for CTA container */
+.cta-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading styling */
+.cta-heading {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    animation: fadeIn 1s ease-out;
+    animation: glowFade 2s ease-in forwards;
+    animation-timeline: view();
+    animation-range: entry 25% cover 50%;
+  }
+  
+  @keyframes glowFade {
+    from {
+      opacity: 0;
+      filter: brightness(150%);
+    }
+    to {
+      opacity: 1;
+      filter: brightness(100%);
+    }
+}
+
+/* Subheading styling */
+.cta-subheading {
+    font-size: 1.5rem;
+    color: #6b7280;
+    margin-bottom: 40px;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+/* Button container */
+.cta-buttons {
+    margin-bottom: 40px;
+}
+
+/* Button styles */
+.cta-button {
+    padding: 14px 30px;
+    margin: 10px;
+    font-size: 1.25rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Demo button styles */
+.cta-button.demo {
+    background-color: #3b82f6;
+    color: white;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+}
+
+.cta-button.toolkit {
+    background-color: #34d399;
+    color: white;
+    box-shadow: 0 4px 15px rgba(52, 211, 153, 0.3);
+}
+
+/* Hover effects for buttons */
+.cta-button:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Email capture section */
+.email-capture {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+/* Heading for email capture */
+.email-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    animation: fadeIn 1s ease-out;
+}
+
+/* Email form styling */
+.email-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: ;
+}
+
+/* Input field styling */
+.email-input {
+    padding: 14px 20px;
+    font-size: 1.1rem;
+    border: 2px solid #e5e7eb;
+    border-radius: 10px;
+    margin-right: 10px;
+    outline: none;
+    transition: border 0.3s ease;
+    width: 250px;
+}
+
+/* Focus effect for email input */
+.email-input:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 5px rgba(59, 130, 246, 0.4);
+}
+
+/* Submit button for email form */
+.email-submit {
+    padding: 14px 30px;
+    background-color: #3b82f6;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for submit button */
+.email-submit:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Animation for fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

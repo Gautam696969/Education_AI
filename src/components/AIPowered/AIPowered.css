@@ -1,0 +1,72 @@
+.ai-section {
+    padding: 60px 20px;
+    background: #f5f8fa;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+   
+}
+  
+  
+  .ai-section h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 40px;
+  }
+  @keyframes glowFade {
+    from {
+      opacity: 0;
+      scale:0.5;
+    }
+    to {
+      opacity: 1;
+      scale: 1;
+    }
+  }
+  .feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    animation: glowFade 5s ease-in forwards;
+    animation-timeline: view(); /* Optional if using scroll-based animations */
+    animation-range: entry 0% cover 50%;
+  }
+  
+  
+ 
+  
+  
+  .feature-card {
+    background: white;
+    border-radius: 20px;
+    padding: 30px 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+  }
+  
+  .feature-icon {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 15px;
+  }
+  
+  .feature-card h3 {
+    font-size: 1.3rem;
+    color: #34495e;
+    margin-bottom: 10px;
+  }
+  
+  .feature-card p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  

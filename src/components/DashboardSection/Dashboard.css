@@ -1,0 +1,178 @@
+/* Main container for dashboard */
+.dashboard-container {
+    background-color: #f9fafb; /* Light background color */
+    padding: 40px 30px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+  
+  /* Heading styling */
+  .dashboard-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #1f2937;
+    margin-bottom: 40px;
+    background: linear-gradient(to right, #6b7280, #3b82f6);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Grid for the dashboard cards */
+  .dashboard-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    transition: all 0.3s ease;
+    animation: appear 3s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+  }
+  
+  @keyframes appear {
+    from {
+      opacity: 0;
+      transform: scaleX(0px);
+      
+    }
+  
+    to {
+      opacity: 1;
+      transform: scaleX(100px);
+    }
+  }
+  
+  /* Responsive grid */
+  @media (min-width: 768px) {
+    .dashboard-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .dashboard-grid {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+  
+  /* Card styles */
+  .dashboard-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .dashboard-card:hover {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    transform: translateY(-8px);
+    background: #f3f4f6;
+  }
+  
+  /* Card Title */
+  .card-title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #4b5563;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Heatmap Section */
+  .heatmap {
+    background: linear-gradient(145deg, #a2b3e5, #f0f4ff);
+    padding: 30px;
+    border-radius: 10px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .heatmap-text {
+    font-size: 1.25rem;
+    color: #4b5563;
+    font-weight: bold;
+  }
+  
+  /* AI Alerts Section */
+  .ai-alerts {
+    background: linear-gradient(145deg, #ffcfda, #ffebf0);
+    padding: 30px;
+    border-radius: 10px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .alert-text {
+    font-size: 1.25rem;
+    color: #d85c6e;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  /* Smart Grading Suggestions Section */
+  .grading-suggestions {
+    background: linear-gradient(145deg, #d3f9e5, #c7f1e7);
+    padding: 30px;
+    border-radius: 10px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .suggestion-text {
+    font-size: 1.25rem;
+    color: #34d399;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  /* Admin Analytics Section */
+  .analytics {
+    background: linear-gradient(145deg, #fef3c7, #fcd34d);
+    padding: 30px;
+    border-radius: 10px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .analytics-text {
+    font-size: 1.25rem;
+    color: #f59e0b;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  /* Animation for fade-in */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

@@ -1,0 +1,56 @@
+.integration-section {
+    background: #f9fafb;
+    padding: 80px 20px;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .integration-container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .integration-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 10px;
+  }
+  
+  .integration-subheading {
+    font-size: 1.2rem;
+    color: #4b5563;
+    margin-bottom: 40px;
+  }
+  
+  .platform-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+  }
+  
+  .platform-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .platform-logo {
+    width: 160px;
+    height: 82px;
+    object-fit: contain;
+    margin-bottom: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .platform-logo:hover {
+    transform: scale(1.1);
+  }
+  
+  .platform-name {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #525558;.platform-name
+  }
