@@ -16,7 +16,7 @@ const HeroSection = () => {
         <div className="cta-buttons">
           <button className="cta-button">Try a Live Demo</button>
           <button className="cta-button">Start Free Trial</button>
-          <button className="cta-button">See How It Works</button>
+          <button className="cta-button">See How to do well It Works</button>
         </div>
       </div>
 
